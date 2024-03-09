@@ -1,0 +1,283 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Futura';
+
+}
+body{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+.mmover{
+    height: 20px;
+    width: 20px;
+    position: fixed;
+    background-color: #fb5607;
+    border-radius: 50%;
+    z-index: 100;
+}
+.navpage{
+    height: 10vh;
+    width: 100vw;
+    background-color: rgba(0, 128, 0, 0);
+    position: fixed;
+    z-index: 110;
+    background-color: black;
+    /* background-color: red; */
+   
+}
+.abovesection{
+    height: 15vh;
+    width: 100vw;
+    /* background-color: green; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+.rightsection{
+    height: 100%;
+    /* width: 30vw; */
+    /* background-color: green; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* margin-right: 150px; */
+
+}
+.rightsection h4 a{
+    font-size: 15px;
+    font-family: 'Futura';
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgb(57, 55, 55);
+  
+}
+.rightsection h4{
+    font-size: 15px;
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+    transition: all ease 0.5s;
+}
+.rightsection h4:hover{
+    border: 1px solid white;
+    padding: 5px;
+    border-radius: 5px;
+}
+.rightsection h4 a:hover{
+   color: red;
+  
+}
+.innavpage{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    position: fixed;
+    z-index: 190;
+    display: none;
+}
+.innavpage i{
+    display: block;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 95vw;
+    cursor: pointer;
+    z-index: 120;
+}
+.innavpage i{
+    padding-right: 50px;
+}
+.innavpage h1 a{
+    font-size: 100px;
+    font-family: 'Futura';
+    text-transform: uppercase;
+    color: white;
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: all ease 0.2s;
+    align-items: center;
+    text-decoration: none;
+    line-height: 100px;
+}
+.containinnav{
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.innavpage h1 a:hover{
+    color: #fb5607;
+}
+.page1{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.midtextcontainer{
+    height: 60vh;
+    width: 80vw;
+    /* background-color: rgb(0, 255, 98); */
+    text-align: center;
+    padding-top: 100px;
+}
+.page1 .midtextcontainer h1{
+    font-size: 9vw;
+    font-family: 'Futura';
+    text-transform: uppercase;
+    line-height: 120px;
+}
+.ftext{
+    color: white;
+}
+.page1 .midtextcontainer .stext{
+    font-size: 11vw;
+    color: #fb5607;
+}
+.page2{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+}
+.videocontainer{
+    height: 80vh;
+    width: 80vw;
+    background-color: red;
+
+}
+.videocontainer video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.page3{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.page3 .text3{
+    height: 30vh;
+    width: 100vw;
+    /* background-color: red; */
+    text-align: center;
+    
+}
+.page3 .text3 h1{
+    font-size: 4vw;
+    font-family: 'Futura';
+    color: white;
+    line-height: 60px;
+}
+.rotate{
+    height: 150px;
+    width: 150px;
+    background-color: #fb5607;
+    text-align: center;
+    border-radius: 50%;
+    animation-name: rotate;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.rotate h1{
+    /* margin-top: -20px; */
+    font-size: 100px;
+    color: black;
+}
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg)
+    }
+}
+
+.about3{
+    height: 8vh;
+    width: 11vw;
+    /* background-color: #fb5607; */
+    margin-top: 10vh;
+    color: white;
+    /* background-color: #a43704; */
+    
+   
+}
+.about3 h1 a{
+    font-family: 'Futura';
+    text-transform: uppercase;
+    font-weight: 300;
+    border: 1px solid #fb5607;
+    text-decoration: none;
+    color: #fb5607;
+}
+
+
+
+
+/* mediaquery */
+
+@media (max-width:650px) {
+    .page1 .midtextcontainer .ftext{
+        line-height: 5px;
+        font-size: 8vw;
+    }
+    .page1 .midtextcontainer .stext{
+        font-size: 10vw;
+        line-height: 80px;
+    }
+    .page3 .text3 h1{
+        font-size: 6vw;
+        line-height: 30px;
+    }
+    .rotate{
+        margin-top: -100px;
+    }
+}
+@media (max-width:420px) {
+    .mmover{
+        display: none;
+    }
+    .page1 .midtextcontainer .ftext{
+        line-height: 5px;
+        font-size: 8vw;
+    }
+    .page1 .midtextcontainer .stext{
+        font-size: 60px;
+        line-height: 50px;
+    }
+    .innavpage h1 a{
+        font-size: 50px;
+        line-height: 50px;
+    }
+    .page3 .text3 h1{
+        font-size: 6vw;
+        line-height: 10px;
+    }
+    .page3 .text3{
+        margin-top: -400px;
+    }
+    .about3{
+        margin-left: -50px;
+    }
+}
